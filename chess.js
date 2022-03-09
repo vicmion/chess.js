@@ -210,6 +210,10 @@ var Chess = function (fen) {
   function reset() {
     load(DEFAULT_POSITION)
   }
+  
+  function setTurn(color) {
+    this.turn = color
+  }
 
   function load(fen, keep_headers) {
     if (typeof keep_headers === 'undefined') {
